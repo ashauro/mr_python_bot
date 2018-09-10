@@ -1,0 +1,4 @@
+botkey.txt
+settings.py
+*.log
+__pycache__

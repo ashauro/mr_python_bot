@@ -52,7 +52,7 @@ def talk_to_me (bot, update):
     user_first_name = update.message.chat.first_name
     user_text = update.message.text
     user_reply = "Привет {}! Ты написал: {}".format(user_first_name, user_text)
-    logging.info('Пользователь ' + user_first_name + ' написал в чат: ' + user_text)
+    logging.info('Пользователь {} написал в чат: {}'.format(user_first_name,user_text))
     update.message.reply_text(user_reply)
 
 def main ():
